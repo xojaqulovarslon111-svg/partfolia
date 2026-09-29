@@ -1,0 +1,609 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contoiner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: rgb(199, 208, 250);
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+.img__logo {
+  width: 150px;
+  border-radius: 50px;
+  margin-left: 35px;
+}
+/* From Uiverse.io by vinodjangid07 */
+.btn {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: rgb(153, 204, 252);
+  border-radius: 30px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: 0.5s;
+  margin-right: 35px;
+}
+
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
+}
+
+.bell path {
+  fill: rgb(19, 19, 19);
+}
+
+.btn:hover {
+  background-color: rgb(3, 141, 233);
+  transition-duration: 0.5s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+  transition-duration: 0.2s;
+}
+
+.btn:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+.hdr__wrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ul__wrp {
+  padding-left: 30%;
+  display: flex;
+  gap: 50px;
+}
+.fon {
+  height: 650px;
+  background: url(./imges/ChatGPT\ Image\ 17\ сент.\ 2026\ г.\,\ 14_54_04.png)
+    center / cover no-repeat;
+  position: relative;
+}
+
+.fon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, #ffffff);
+}
+
+.ibg {
+  width: 290px;
+  border-radius: 35px;
+  transition: 0.2s;
+}
+.ibg:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 50px black;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  gap: 500px;
+  align-items: center;
+}
+.h2_wrp {
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  background: linear-gradient(to left, hsla(245, 97%, 50%, 0.63), #1b03f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.h1_wrp {
+  background: linear-gradient(to left, #38eff5, #1b03f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 75px;
+}
+.p-r {
+  color: rgb(14, 6, 61);
+  font-family: "Roboto", sans-serif;
+}
+/* From Uiverse.io by Allyhere */
+.btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: rgb(4, 60, 243);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  margin-top: 20px;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow:
+    0px 0px 20px rgba(71, 184, 255, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.btn-donate:hover {
+  background-position: right top;
+}
+
+.btn-donate:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow:
+    0 0 0 3px var(--btn-bg-color),
+    0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}
+.gh {
+  width: 340px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+.gh:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 50px black;
+}
+.hero_wrp {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  gap: 140px;
+  font-family: "Roboto", sans-serif;
+}
+.pr {
+  padding-top: 40px;
+}
+.wrp__h1 {
+  padding-top: 30px;
+  padding-left: 30px;
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to left, #38eff5, #1b03f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto", sans-serif;
+}
+.fon1 {
+  height: 650px;
+  background: url(./imges/ChatGPT\ Image\ 20\ сент.\ 2026\ г.\,\ 17_17_56.png)
+    center / cover no-repeat;
+  position: relative;
+}
+
+.fon1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, #ffffff);
+}
+.fon2 {
+  height: 800%;
+
+  background: url(./imges/ChatGPT\ Image\ 20\ сент.\ 2026\ г.\,\ 17_17_56.png)
+    center / cover no-repeat;
+  position: relative;
+}
+
+.fon2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, #ffffff);
+}
+
+/* From Uiverse.io by zjssun */
+.btn2 {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #131212fd;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #0e0d0d80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.btn2:hover,
+:focus {
+  color: #f7f4f488;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow:
+    0 0 5px #fcf9f9,
+    0 0 10px #fdfcfc,
+    0 0 20px #ffffff;
+  box-shadow:
+    0 0 5px #008cff,
+    0 0 20px #008cff,
+    0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+.h1__gg {
+  /* From Uiverse.io by Mhyar-nsi */
+  font-size: 30px;
+  background-color: #fcfafa;
+  color: #3b82f6;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 800px;
+  height: 50px;
+  transition: 0.3s;
+}
+
+.h1__gg:hover {
+  background-color: #3b82f6;
+  box-shadow: 5px 5px 0 5px #3b83f694;
+  color: #fff;
+}
+
+.card1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 80px;
+  background-color: #008cff;
+  padding: 50px;
+  margin: 150px;
+  border-radius: 50px;
+  transition: 0.3s;
+  background: linear-gradient(to left, #18f7f7fa, #2a70f3);
+  padding: 35px;
+  border-radius: 50px;
+}
+.card1:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 10px 50px rgb(2, 6, 247);
+}
+
+.img_k {
+  width: 55%;
+  border-radius: 50px;
+}
+
+.p__rr {
+  padding: 20px 0 20px;
+  font-size: 20px;
+}
+.fon8 {
+  background: linear-gradient(to right, #759ef7, #0818faf6);
+  padding: 35px;
+  border-radius: 50px;
+}
+.ii {
+  width: 300px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.ii:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 10px 50px black;
+}
+.hero__ddd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card2 {
+  padding-top: 30px;
+}
+.h2__gg {
+  font-family: "Roboto", sans-serif;
+}
+.fon3 {
+  height: 800%;
+
+  background: url(./imges/ChatGPT\ Image\ 20\ сент.\ 2026\ г.\,\ 17_17_56.png)
+    center / cover no-repeat;
+  position: relative;
+}
+:root {
+  --sky-top: #a9d8f7;
+  --sky-bottom: #e6f5ff;
+  --cloud: #ffffff;
+  --ink: #24435f;
+  --muted: #5f7f9b;
+  --accent: #3d8fd1;
+  --pill: #eaf5ff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sky-top: #0f1b30;
+    --sky-bottom: #1a2d4b;
+    --cloud: #26395a;
+    --ink: #e8f1fc;
+    --muted: #a3b8d3;
+    --accent: #8cc4f5;
+    --pill: #31466b;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito", "Trebuchet MS", system-ui, sans-serif;
+  background: linear-gradient(var(--sky-top), var(--sky-bottom));
+  color: var(--ink);
+}
+main {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 64px 24px;
+  text-align: center;
+}
+main p {
+  color: var(--muted);
+}
+
+/* ===== ФУТЕР ===== */
+.cloud-footer {
+  position: relative;
+}
+
+/* Слои облаков */
+.clouds {
+  position: relative;
+  height: 110px;
+  overflow: hidden;
+}
+.c {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  background: var(--cloud);
+  --tile: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 80'%3E%3Cg%3E%3Ccircle cx='60' cy='60' r='30'/%3E%3Ccircle cx='130' cy='50' r='40'/%3E%3Ccircle cx='220' cy='58' r='32'/%3E%3Ccircle cx='300' cy='46' r='44'/%3E%3Ccircle cx='390' cy='60' r='30'/%3E%3Ccircle cx='470' cy='52' r='38'/%3E%3Ccircle cx='550' cy='60' r='30'/%3E%3Crect y='60' width='600' height='20'/%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask: var(--tile) repeat-x 0 100% / var(--w) var(--h);
+  mask: var(--tile) repeat-x 0 100% / var(--w) var(--h);
+  height: var(--h);
+  animation: drift var(--t) linear infinite;
+}
+.c1 {
+  --w: 900px;
+  --h: 110px;
+  --t: 90s;
+  opacity: 0.35;
+}
+.c2 {
+  --w: 700px;
+  --h: 90px;
+  --t: 60s;
+  opacity: 0.65;
+  animation-direction: reverse;
+}
+.c3 {
+  --w: 520px;
+  --h: 70px;
+  --t: 40s;
+  opacity: 1;
+}
+@keyframes drift {
+  to {
+    -webkit-mask-position: var(--w) 100%;
+    mask-position: var(--w) 100%;
+  }
+}
+
+/* Тело футера */
+.body {
+  background: var(--cloud);
+  padding: 12px 24px calc(32px + env(safe-area-inset-bottom, 0px));
+  text-align: center;
+}
+.name {
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  font-size: clamp(32px, 7vw, 56px);
+  color: var(--ink);
+}
+.tagline {
+  margin: 6px 0 22px;
+  color: var(--muted);
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 0 26px;
+  padding: 0;
+  list-style: none;
+}
+.links a {
+  display: inline-block;
+  padding: 9px 20px;
+  border-radius: 999px;
+  background: var(--pill);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+  transition:
+    transform 0.2s,
+    background 0.2s,
+    color 0.2s;
+}
+.links a:hover,
+.links a:focus-visible {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-3px);
+  outline: none;
+}
+.copy {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 16px;
+  border-top: 2px dashed var(--pill);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--muted);
+}
+.copy a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+.copy a:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c {
+    animation: none;
+  }
+}
+.fon3 {
+  padding-bottom: 120px;
+}
+
+.grp {
+  max-width: 900px;
+  margin: 60px auto 0;
+  padding: 0 16px;
+}
+.grp-view {
+  overflow: hidden;
+  border-radius: 50px;
+  touch-action: pan-y;
+}
+.grp-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.grp-slide {
+  flex: 0 0 100%;
+  min-height: 340px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to left, #18f7f7fa, #2a70f3);
+}
+.grp-slide:nth-child(2) {
+  background: linear-gradient(to left, #759ef7, #0818faf6);
+}
+.grp-slide:nth-child(3) {
+  background: linear-gradient(to left, #38eff5, #1b03f8);
+}
+.grp-slide h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+.grp-slide p {
+  font-size: 20px;
+  max-width: 44ch;
+}
+
+.grp-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.grp-arr {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  color: #3b82f6;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.grp-arr:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+.grp-dots {
+  display: flex;
+  gap: 8px;
+}
+.grp-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: none;
+  padding: 0;
+  background: #3b82f6;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.grp-dot[aria-current="true"] {
+  width: 28px;
+  opacity: 1;
+}
+.img__pp{
+ 
+  width: 350px;
+ border-radius: 30px;
+}
+.grp-slide:nth-child(3n + 2) { background: linear-gradient(to left, #759ef7, #0818faf6); }
+.grp-slide:nth-child(3n) { background: linear-gradient(to left, #38eff5, #1b03f8); }
