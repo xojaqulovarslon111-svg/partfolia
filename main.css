@@ -222,7 +222,7 @@ li {
   background: linear-gradient(to bottom, transparent, #ffffff);
 }
 .fon2 {
-  height: 800%;
+  height: 600%;
 
   background: url(./imges/ChatGPT\ Image\ 20\ сент.\ 2026\ г.\,\ 17_17_56.png)
     center / cover no-repeat;
@@ -600,10 +600,242 @@ main p {
   width: 28px;
   opacity: 1;
 }
-.img__pp{
- 
+.img__pp {
   width: 350px;
- border-radius: 30px;
+  border-radius: 30px;
 }
-.grp-slide:nth-child(3n + 2) { background: linear-gradient(to left, #759ef7, #0818faf6); }
-.grp-slide:nth-child(3n) { background: linear-gradient(to left, #38eff5, #1b03f8); }
+.grp-slide:nth-child(3n + 2) {
+  background: linear-gradient(to left, #759ef7, #0818faf6);
+}
+.grp-slide:nth-child(3n) {
+  background: linear-gradient(to left, #38eff5, #1b03f8);
+}
+
+.sites {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+  font-family: system-ui, sans-serif;
+}
+.sites h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #111;
+}
+.track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+.slide img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+  background: #222;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px 20px 18px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+  color: #fff;
+}
+.caption h3 {
+  margin: 0 0 4px;
+  font-size: 1.3rem;
+}
+.caption p {
+  margin: 0 0 10px;
+  opacity: 0.85;
+}
+.caption a {
+  display: inline-block;
+  background: #fff;
+  color: #111;
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 22px;
+  cursor: pointer;
+}
+.nav:focus-visible,
+.dots button:focus-visible {
+  outline: 3px solid #4da3ff;
+}
+.prev {
+  left: 12px;
+}
+.next {
+  right: 12px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+.dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 0;
+  background: #bbb;
+  cursor: pointer;
+  padding: 0;
+}
+.dots button.active {
+  background: #111;
+  width: 26px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    transition: none;
+  }
+}
+
+.fon4 {
+  background: url(./imges/ChatGPT\ Image\ 20\ сент.\ 2026\ г.\,\ 17_17_56.png)
+    center / cover no-repeat;
+  position: relative;
+}
+
+/* From Uiverse.io by musashi-13 */
+@keyframes autoRun3d {
+  from {
+    transform: perspective(1000px) rotateY(-360deg);
+  }
+  to {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+}
+
+@keyframes animateBrightness {
+  10% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(0.2);
+  }
+  90% {
+    filter: brightness(1);
+  }
+}
+
+.card-3d {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 400px; 
+  transform-style: preserve-3d;
+  animation: autoRun3d 20s linear infinite;
+  will-change: transform;
+}
+
+.card-3d div {
+  position: absolute;
+  width: 120px; 
+  height: 180px; 
+  background-color: rgb(199, 199, 199);
+  border: solid 2px lightgray;
+  border-radius: 0.5rem;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  animation: animateBrightness 20s linear infinite;
+  transition-duration: 200ms;
+  will-change: transform, filter;
+  overflow: hidden;
+}
+
+.card-3d div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-3d:hover,
+.card-3d:hover div {
+  animation-play-state: paused !important;
+}
+
+.card-3d div:nth-child(1) {
+  transform: translate(-50%, -50%) rotateY(0deg) translateZ(300px);
+  animation-delay: -0s;
+}
+
+.card-3d div:nth-child(2) {
+  transform: translate(-50%, -50%) rotateY(36deg) translateZ(300px);
+  animation-delay: -2s;
+}
+
+.card-3d div:nth-child(3) {
+  transform: translate(-50%, -50%) rotateY(72deg) translateZ(300px);
+  animation-delay: -4s;
+}
+
+.card-3d div:nth-child(4) {
+  transform: translate(-50%, -50%) rotateY(108deg) translateZ(300px);
+  animation-delay: -6s;
+}
+
+.card-3d div:nth-child(5) {
+  transform: translate(-50%, -50%) rotateY(144deg) translateZ(300px);
+  animation-delay: -8s;
+}
+
+.card-3d div:nth-child(6) {
+  transform: translate(-50%, -50%) rotateY(180deg) translateZ(300px);
+  animation-delay: -10s;
+}
+
+.card-3d div:nth-child(7) {
+  transform: translate(-50%, -50%) rotateY(216deg) translateZ(300px);
+  animation-delay: -12s;
+}
+
+.card-3d div:nth-child(8) {
+  transform: translate(-50%, -50%) rotateY(252deg) translateZ(300px);
+  animation-delay: -14s;
+}
+
+.card-3d div:nth-child(9) {
+  transform: translate(-50%, -50%) rotateY(288deg) translateZ(300px);
+  animation-delay: -16s;
+}
+
+.card-3d div:nth-child(10) {
+  transform: translate(-50%, -50%) rotateY(324deg) translateZ(300px);
+  animation-delay: -18s;
+}
+.img__ff{
+  width: 120px;
+}
